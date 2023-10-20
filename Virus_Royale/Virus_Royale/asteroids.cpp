@@ -1,6 +1,6 @@
-#include "asteroids.h"
-
 #include "raylib.h"
+
+#include "asteroids.h"
 
 
 void asteroidsUpdate()

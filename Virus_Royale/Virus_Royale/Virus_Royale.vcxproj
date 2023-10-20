@@ -150,16 +150,24 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="asteroids.cpp" />
+    <ClCompile Include="button.cpp" />
+    <ClCompile Include="colisionManager.cpp" />
     <ClCompile Include="game.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="mainMenu.cpp" />
     <ClCompile Include="player.cpp" />
     <ClCompile Include="programManager.cpp" />
+    <ClCompile Include="utils.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="asteroids.h" />
+    <ClInclude Include="button.h" />
+    <ClInclude Include="collisionManager.h" />
     <ClInclude Include="game.h" />
+    <ClInclude Include="mainMenu.h" />
     <ClInclude Include="player.h" />
     <ClInclude Include="programManager.h" />
+    <ClInclude Include="utils.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,6 +1,6 @@
-#include "player.h"
-
 #include "raylib.h"
+
+#include "player.h"
 
 
 void playerUpdate()

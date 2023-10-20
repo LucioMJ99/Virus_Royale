@@ -7,4 +7,6 @@ struct Player
 	Vector2 position;
 	Vector2 velocity;
 	float rotation;
-} Player;
+};
+
+Player player;
