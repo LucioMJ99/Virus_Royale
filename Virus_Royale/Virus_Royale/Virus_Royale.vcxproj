@@ -149,12 +149,16 @@
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="asteroids.cpp" />
     <ClCompile Include="game.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="player.cpp" />
     <ClCompile Include="programManager.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="asteroids.h" />
     <ClInclude Include="game.h" />
+    <ClInclude Include="player.h" />
     <ClInclude Include="programManager.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
