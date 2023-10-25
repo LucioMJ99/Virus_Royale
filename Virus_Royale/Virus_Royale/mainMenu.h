@@ -9,6 +9,7 @@ namespace MainMenu
 		EXIT
 	};
 
+	void Draw();
 	void Update();
 	void Init();
 

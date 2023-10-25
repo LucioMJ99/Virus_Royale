@@ -9,4 +9,4 @@ struct Player
 	float rotation;
 };
 
-Player player;
+//Player player;

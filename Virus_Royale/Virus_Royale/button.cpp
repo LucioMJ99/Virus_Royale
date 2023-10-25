@@ -11,8 +11,8 @@ namespace Buttons
 
 	void CenterButton(Button& button) 
 	{
-		button.pos.x -= (button.size.x * .5);
-		button.pos.y -= (button.size.y * .5);
+		button.pos.x -= (button.size.x * 0.5f);
+		button.pos.y -= (button.size.y * 0.5f);
 	}
 
 	bool IsCursorInside(Button button) 
@@ -24,17 +24,17 @@ namespace Buttons
 	{
 		if (button.hovered) 
 		{
-			DrawRectangle(button.pos.x, button.pos.y, button.size.x, button.size.y, button.col);
+			DrawRectangle((int)button.pos.x, (int)button.pos.y, (int)button.size.x, (int)button.size.y, button.col);
 			Utils::DrawCenteredText(button.text,
-				Vector2{ (float)(button.pos.x + (button.size.x * .5)), (float)(button.pos.y + (button.size.y * .5)) },
-				(button.size.y * .5), BLACK);
+				Vector2{ (float)(button.pos.x + (button.size.x * .5f)), (float)(button.pos.y + (button.size.y * .5f)) },
+				(int)(button.size.y * .5f), BLACK);
 		}
 		else 
 		{
-			DrawRectangleLines(button.pos.x, button.pos.y, button.size.x, button.size.y, button.col);
+			DrawRectangleLines((int)button.pos.x, (int)button.pos.y, (int)button.size.x, (int)button.size.y, button.col);
 			Utils::DrawCenteredText(button.text,
 				Vector2{ (float)(button.pos.x + (button.size.x * .5)), (float)(button.pos.y + (button.size.y * .5)) },
-				(button.size.y * .5), button.col);
+				(int)(button.size.y * .5f), button.col);
 		}
 	}
 

@@ -3,8 +3,8 @@
 #include "programManager.h"
 #include "game.h"
 
-const int screenWidth = 800;
-const int screenHeight = 450;
+const int screenWidth = 1024;
+const int screenHeight = 768;
 
 void CloseProgram();
 void UpdateProgram();

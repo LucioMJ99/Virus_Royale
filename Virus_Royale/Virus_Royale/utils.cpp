@@ -5,7 +5,9 @@ namespace Utils
 	void DrawCenteredText(const char* text, Vector2 pos, int fontSize, Color color) 
 	{
 		int textWide = MeasureText(text, fontSize);
-		DrawText(text, (pos.x) - (textWide * .5), (pos.y) - (fontSize * .5), fontSize, color);
+		int x = (int)(pos.x) - (int)(textWide * 0.5f);
+		int y = (int)(pos.y) - (int)(fontSize * 0.5f);
+		DrawText(text, x , y , fontSize, color);
 	}
 
 	float Modulo(Vector2 vec) 
@@ -14,7 +16,7 @@ namespace Utils
 	}
 	float RadiansToDegrees(float rad) 
 	{
-		return (rad * (180.0 / m_pi));
+		return (rad * (180.0f / (float)m_pi));
 	}
 	Vector2 GetTargetVector(Vector2 origin, Vector2 target) 
 	{
