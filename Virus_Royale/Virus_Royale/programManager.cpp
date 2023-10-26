@@ -17,12 +17,14 @@ void initScreenStatus(GameScreen status)
 	switch (status)
 	{
 	case GameScreen::MAINMENU:
-		MainMenu::Init;
+		
 		break;
 	case GameScreen::INGAME:
-		Game::Init;
+		
 		break;
 	case GameScreen::GAMEOVER:
+		break;
+	case GameScreen::INSTRUCTIONS:
 		break;
 	case GameScreen::CREDITS:
 		break;

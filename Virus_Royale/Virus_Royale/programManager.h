@@ -8,6 +8,7 @@ enum class GameScreen
 	MAINMENU,
 	INGAME,
 	GAMEOVER,
+	INSTRUCTIONS,
 	CREDITS,
 	SETTINGS
 };

@@ -5,7 +5,7 @@
 
 namespace MainMenu
 {
-    const int amountButtons = 3;
+    const int amountButtons = 5;
     Button buttons[amountButtons];
     int selectedButton = 0;  // Índice del botón seleccionado
 
@@ -21,6 +21,10 @@ namespace MainMenu
             return "Play";
         case MainMenu::Options::INSTRUCTIONS:
             return "How To Play";
+        case MainMenu::Options::SETTINGS:
+            return "Settings";
+        case MainMenu::Options::CREDITS:
+            return "Credits";
         case MainMenu::Options::EXIT:
             return "Exit";
         default:
@@ -39,6 +43,12 @@ namespace MainMenu
         case MainMenu::Options::INSTRUCTIONS:
             // Lógica para mostrar las instrucciones
             break;
+        case Options::CREDITS:
+            // Lógica para mostrar los creditos
+            break;
+        case Options::SETTINGS:
+            // Lógica para mostrar los Settings
+            break;
         case MainMenu::Options::EXIT:
             // Lógica para salir del juego
             break;
@@ -55,7 +65,9 @@ namespace MainMenu
         // Puedes ajustar las posiciones según tu diseño
         buttons[(int)Options::PLAY] = Buttons::Create((int)Options::PLAY, { GetScreenWidth() / 2 - buttonSize.x / 2, 200 }, buttonSize, "Play");
         buttons[(int)Options::INSTRUCTIONS] = Buttons::Create((int)Options::INSTRUCTIONS, { GetScreenWidth() / 2 - buttonSize.x / 2, 300 }, buttonSize, "How To Play");
-        buttons[(int)Options::EXIT] = Buttons::Create((int)Options::EXIT, { GetScreenWidth() / 2 - buttonSize.x / 2, 400 }, buttonSize, "Exit");
+        buttons[(int)Options::SETTINGS] = Buttons::Create((int)Options::SETTINGS, { GetScreenWidth() / 2 - buttonSize.x / 2, 400 }, buttonSize, "Settings");
+        buttons[(int)Options::CREDITS] = Buttons::Create((int)Options::CREDITS, { GetScreenWidth() / 2 - buttonSize.x / 2, 500 }, buttonSize, "Credits");
+        buttons[(int)Options::EXIT] = Buttons::Create((int)Options::EXIT, { GetScreenWidth() / 2 - buttonSize.x / 2, 600 }, buttonSize, "Exit");
     }
 
     void DrawCenteredText(const char* text, Vector2 pos, int fontSize, Color color)

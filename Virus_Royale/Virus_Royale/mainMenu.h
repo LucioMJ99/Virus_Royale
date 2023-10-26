@@ -2,10 +2,12 @@
 
 namespace MainMenu 
 {
-	enum class Options 
+	enum class Options
 	{
 		PLAY,
 		INSTRUCTIONS,
+		SETTINGS,
+		CREDITS,
 		EXIT
 	};
 
