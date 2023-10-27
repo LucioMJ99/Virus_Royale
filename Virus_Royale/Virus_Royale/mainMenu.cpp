@@ -39,6 +39,7 @@ namespace MainMenu
         {
         case MainMenu::Options::PLAY:
             // Lógica para iniciar el juego
+
             break;
         case MainMenu::Options::INSTRUCTIONS:
             // Lógica para mostrar las instrucciones

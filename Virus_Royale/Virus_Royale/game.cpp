@@ -5,7 +5,6 @@
 
 namespace Game 
 {
-
 	void Draw() 
 	{
 		BeginDrawing();
@@ -22,7 +21,7 @@ namespace Game
 		Draw();
 	}
 
-	void Init() 
+	void Init()
 	{
 		MainMenu::Init();
 	}
